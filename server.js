@@ -1,7 +1,7 @@
 const express = require('express');
 const mysql = require('mysql2');
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3003;
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
@@ -11,7 +11,7 @@ const db = mysql.createConnection(
   {
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: 'Guztav013!',
     database: 'work_tracker_db'
   },
   console.log(`Connected to the work_tracker_db database.`)
@@ -103,6 +103,10 @@ app.put('/api/role/:id', (req, res) => {
 });
 
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+app.use((req, res) => {
+    res.status(404).end();
+  });
+  
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
