@@ -1,19 +1,16 @@
 {
-    "name": "work-tracker",
-    "version": "1.0.0",
-    "main": "server.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node server.js"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "description": "",
-    "dependencies": {
-      "express": "^4.17.1",
-      "jshint": "^2.12.0",
-      "mysql2": "^2.2.5"
-    }
+  "name": "work-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asciiart-logo": "^0.2.6",
+    "inquirer": "8.2.4",
+    "mysql2": "^2.1.0"
   }
-  
+}
